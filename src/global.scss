@@ -1,0 +1,42 @@
+@import "./responsive.scss";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.main{
+    font-family: "Inter", sans-serif;
+    background-color: #2a272b;
+    color: white;
+
+}
+.container{
+    display: flex;
+
+    @include md{
+        background-color: rgb(110, 39, 39);
+    }
+}
+
+.menuContainer{
+width: 200px;
+padding: 5px 20px;
+border-right: 2px solid #384256 ;
+
+@include md{
+    width: max-content;
+}
+}
+
+.contentContainer{
+  width: 100%;
+  padding: 5px 20px;
+
+
+}
